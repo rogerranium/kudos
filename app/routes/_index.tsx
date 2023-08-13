@@ -9,8 +9,8 @@ export const meta: V2_MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to rogerranium dev branch</h1>
+    <div className="h-screen w-full bg-slate-600">
+      <h1 className="font-bold text-5xl bg-blue-600">Welcome to rogerranium dev branch</h1>
      
     </div>
   );

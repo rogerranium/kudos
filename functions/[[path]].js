@@ -16441,58 +16441,32 @@ __export(root_exports, {
   links: () => links
 });
 
-// css-bundle-update-plugin-ns:/home/momo/Documents/kudos/node_modules/@remix-run/css-bundle/dist/esm/index.js
-var cssBundleHref;
+// app/styles/app.css
+var app_default = "/build/_assets/app-TPI24L4J.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1), links = () => [
-  ...cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []
+  { rel: "stylesheet", href: app_default }
 ];
 function App() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("html", { lang: "en", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { charSet: "utf-8" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 20,
+        lineNumber: 26,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 21,
+        lineNumber: 27,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 22,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Links, {}, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 23,
-        columnNumber: 9
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/root.tsx",
-      lineNumber: 19,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Outlet, {}, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 26,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(ScrollRestoration2, {}, void 0, !1, {
-        fileName: "app/root.tsx",
-        lineNumber: 27,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Scripts, {}, void 0, !1, {
-        fileName: "app/root.tsx",
         lineNumber: 28,
         columnNumber: 9
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(LiveReload, {}, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 29,
         columnNumber: 9
@@ -16501,10 +16475,36 @@ function App() {
       fileName: "app/root.tsx",
       lineNumber: 25,
       columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Outlet, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 32,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(ScrollRestoration2, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 33,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(Scripts, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 34,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(LiveReload, {}, void 0, !1, {
+        fileName: "app/root.tsx",
+        lineNumber: 35,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/root.tsx",
+      lineNumber: 31,
+      columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 18,
+    lineNumber: 24,
     columnNumber: 5
   }, this);
 }
@@ -16520,7 +16520,7 @@ var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1), meta = () =
   { name: "description", content: "Welcome to Remix!" }
 ];
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { style: { fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { children: "Welcome to rogerranium Cloudflare pages" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "h-screen w-full bg-slate-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { className: "font-bold text-5xl bg-blue-600", children: "Welcome to rogerranium dev branch" }, void 0, !1, {
     fileName: "app/routes/_index.tsx",
     lineNumber: 13,
     columnNumber: 7
@@ -16532,7 +16532,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-QD4T74LP.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BFB4J6KL.js", "/build/_shared/chunk-X43CXG3P.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-B23CWGQZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-FOH56CWW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "28f122dc", hmr: { runtime: "/build/_shared/chunk-X43CXG3P.js", timestamp: 1691950320929 }, url: "/build/manifest-28F122DC.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-5VOF57XW.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-XGL3X26Q.js", "/build/_shared/chunk-GNZVU7XA.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-T43FSYEC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-M35QKQBG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "0baac13d", hmr: { runtime: "/build/_shared/chunk-GNZVU7XA.js", timestamp: 1691956477934 }, url: "/build/manifest-0BAAC13D.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -17125,18 +17125,6 @@ react/cjs/react-jsx-dev-runtime.development.js:
 @remix-run/react/dist/esm/index.js:
   (**
    * @remix-run/react v1.19.3
-   *
-   * Copyright (c) Remix Software Inc.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.md file in the root directory of this source tree.
-   *
-   * @license MIT
-   *)
-
-@remix-run/css-bundle/dist/esm/index.js:
-  (**
-   * @remix-run/css-bundle v1.19.3
    *
    * Copyright (c) Remix Software Inc.
    *

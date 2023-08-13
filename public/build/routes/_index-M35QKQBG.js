@@ -3,7 +3,7 @@ import {
 } from "/build/_shared/chunk-XU7DNSPJ.js";
 import {
   createHotContext
-} from "/build/_shared/chunk-X43CXG3P.js";
+} from "/build/_shared/chunk-GNZVU7XA.js";
 import "/build/_shared/chunk-UWV35TSL.js";
 import "/build/_shared/chunk-BOXFZXVX.js";
 import {
@@ -29,7 +29,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/_index.tsx"
   );
-  import.meta.hot.lastModified = "1691950320580.0557";
+  import.meta.hot.lastModified = "1691956477508.0383";
 }
 var meta = () => {
   return [{
@@ -40,12 +40,9 @@ var meta = () => {
   }];
 };
 function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { style: {
-    fontFamily: "system-ui, sans-serif",
-    lineHeight: "1.8"
-  }, children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { children: "Welcome to rogerranium Cloudflare pages" }, void 0, false, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "h-screen w-full bg-slate-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "font-bold text-5xl bg-blue-600", children: "Welcome to rogerranium dev branch" }, void 0, false, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 34,
+    lineNumber: 31,
     columnNumber: 7
   }, this) }, void 0, false, {
     fileName: "app/routes/_index.tsx",
@@ -62,4 +59,4 @@ export {
   Index as default,
   meta
 };
-//# sourceMappingURL=/build/routes/_index-FOH56CWW.js.map
+//# sourceMappingURL=/build/routes/_index-M35QKQBG.js.map
