@@ -4747,7 +4747,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
         }
         return dispatcher.useContext(Context);
       }
-      function useState4(initialState) {
+      function useState6(initialState) {
         var dispatcher = resolveDispatcher();
         return dispatcher.useState(initialState);
       }
@@ -4759,7 +4759,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
         var dispatcher = resolveDispatcher();
         return dispatcher.useRef(initialValue);
       }
-      function useEffect4(create, deps) {
+      function useEffect5(create, deps) {
         var dispatcher = resolveDispatcher();
         return dispatcher.useEffect(create, deps);
       }
@@ -5288,7 +5288,7 @@ Check the top-level render call using <` + parentName + ">.");
         toArray,
         only: onlyChild
       };
-      exports.Children = Children2, exports.Component = Component2, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext3, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef3, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback3, exports.useContext = useContext5, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect4, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect3, exports.useMemo = useMemo5, exports.useReducer = useReducer, exports.useRef = useRef4, exports.useState = useState4, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition2, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+      exports.Children = Children2, exports.Component = Component2, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext3, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef3, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback3, exports.useContext = useContext5, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect5, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect3, exports.useMemo = useMemo5, exports.useReducer = useReducer, exports.useRef = useRef4, exports.useState = useState6, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition2, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
     })();
   }
 });
@@ -9719,7 +9719,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
       function basicStateReducer(state, action) {
         return typeof action == "function" ? action(state) : action;
       }
-      function useState4(initialState) {
+      function useState6(initialState) {
         return currentHookNameInDev = "useState", useReducer(
           basicStateReducer,
           // useReducer has a special case to support lazy useState initializers
@@ -9839,7 +9839,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useMemo: useMemo5,
         useReducer,
         useRef: useRef4,
-        useState: useState4,
+        useState: useState6,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect3,
         useCallback: useCallback3,
@@ -13271,7 +13271,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
       function basicStateReducer(state, action) {
         return typeof action == "function" ? action(state) : action;
       }
-      function useState4(initialState) {
+      function useState6(initialState) {
         return currentHookNameInDev = "useState", useReducer(
           basicStateReducer,
           // useReducer has a special case to support lazy useState initializers
@@ -13391,7 +13391,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useMemo: useMemo5,
         useReducer,
         useRef: useRef4,
-        useState: useState4,
+        useState: useState6,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect3,
         useCallback: useCallback3,
@@ -14638,7 +14638,7 @@ var require_react_jsx_dev_runtime_development = __commonJS({
           value: source
         }), Object.freeze && (Object.freeze(element.props), Object.freeze(element)), element;
       };
-      function jsxDEV4(type, config, maybeKey, source, self) {
+      function jsxDEV7(type, config, maybeKey, source, self) {
         {
           var propName, props = {}, key = null, ref = null;
           maybeKey !== void 0 && (checkKeyStringCoercion(maybeKey), key = "" + maybeKey), hasValidKey(config) && (checkKeyStringCoercion(config.key), key = "" + config.key), hasValidRef(config) && (ref = config.ref, warnIfStringRefCannotBeAutoConverted(config, self));
@@ -14785,7 +14785,7 @@ Check the top-level render call using <` + parentName + ">.");
             var typeString;
             type === null ? typeString = "null" : isArray(type) ? typeString = "array" : type !== void 0 && type.$$typeof === REACT_ELEMENT_TYPE ? (typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />", info = " Did you accidentally export a JSX literal instead of a component?") : typeString = typeof type, error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
           }
-          var element = jsxDEV4(type, props, key, source, self);
+          var element = jsxDEV7(type, props, key, source, self);
           if (element == null)
             return element;
           if (validType) {
@@ -16442,7 +16442,7 @@ __export(root_exports, {
 });
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-TPI24L4J.css";
+var app_default = "/build/_assets/app-L4GQRMJZ.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1), links = () => [
@@ -16531,8 +16531,198 @@ function Index() {
   }, this);
 }
 
+// app/routes/login.tsx
+var login_exports = {};
+__export(login_exports, {
+  default: () => Login
+});
+
+// app/components/layout.tsx
+var import_jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
+function Layout({ children }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "h-screen w-full bg-blue-600 font-mono", children }, void 0, !1, {
+    fileName: "app/components/layout.tsx",
+    lineNumber: 4,
+    columnNumber: 12
+  }, this);
+}
+
+// app/components/form.field.tsx
+var import_react4 = __toESM(require_react(), 1), import_jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
+function FormField({
+  htmlFor,
+  label,
+  type,
+  value,
+  onChange = () => {
+  },
+  error = ""
+}) {
+  let [errorText, setErrorText] = (0, import_react4.useState)(error);
+  return (0, import_react4.useEffect)(() => {
+    setErrorText(error);
+  }, [error]), /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_jsx_dev_runtime5.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("label", { htmlFor, className: "text-blue-600 font-semibold", children: label }, void 0, !1, {
+      fileName: "app/components/form.field.tsx",
+      lineNumber: 28,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+      "input",
+      {
+        onChange: (e) => {
+          onChange(e), setErrorText("");
+        },
+        type,
+        id: htmlFor,
+        name: htmlFor,
+        value,
+        className: "w-full p-2 rounded-xl my-2"
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/form.field.tsx",
+        lineNumber: 32,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "text-xs font-semibold text-center tracking-wide text-red-500 w-full", children: errorText || "" }, void 0, !1, {
+      fileName: "app/components/form.field.tsx",
+      lineNumber: 39,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/form.field.tsx",
+    lineNumber: 27,
+    columnNumber: 12
+  }, this);
+}
+
+// app/routes/login.tsx
+var import_react5 = __toESM(require_react(), 1), import_jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
+function Login() {
+  let [action, setAction] = (0, import_react5.useState)("login"), [formData, setFormData] = (0, import_react5.useState)({
+    email: "",
+    password: "",
+    firstName: "",
+    lastName: ""
+  }), handleInputChange = (event, field) => {
+    setFormData((form) => ({
+      ...form,
+      [field]: event.target.value
+    }));
+  };
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Layout, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "h-full flex justify-center items-center flex-col gap-y-4", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+      "button",
+      {
+        onClick: () => setAction(action == "login" ? "register" : "login"),
+        className: "absolute top-8 right-8 rounded-xl bg-yellow-300 font-semibold text-blue-600 px-3 py-2 transition duration-300 ease-in-out hover:bg-yellow-400 hover:-translate-y-1",
+        children: action === "login" ? "Sign Up" : "Sign In"
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/login.tsx",
+        lineNumber: 26,
+        columnNumber: 17
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h2", { className: "text-5xl font-extrabold text-yellow-300 text-center", children: "WELCOME TO MY CHAT" }, void 0, !1, {
+      fileName: "app/routes/login.tsx",
+      lineNumber: 31,
+      columnNumber: 17
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "font-semibold text-slate-300 text-center", children: action === "login" ? "Log In Please To Continue ..." : "Sign up To Get Started" }, void 0, !1, {
+      fileName: "app/routes/login.tsx",
+      lineNumber: 32,
+      columnNumber: 17
+    }, this),
+    JSON.stringify(formData),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("form", { className: "rounded-2xl bg-gray-200 p-6 w-96", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        FormField,
+        {
+          type: "text",
+          htmlFor: "email",
+          label: "Email",
+          value: formData.email,
+          onChange: (e) => handleInputChange(e, "email")
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/login.tsx",
+          lineNumber: 39,
+          columnNumber: 21
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        FormField,
+        {
+          type: "password",
+          htmlFor: "password",
+          label: " Password",
+          value: formData.password,
+          onChange: (e) => handleInputChange(e, "password")
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/login.tsx",
+          lineNumber: 42,
+          columnNumber: 21
+        },
+        this
+      ),
+      action === "register" && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_jsx_dev_runtime6.Fragment, { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(FormField, { type: "text", htmlFor: "firstName", label: "First Name", onChange: (e) => handleInputChange(e, "firstName"), value: formData.firstName }, void 0, !1, {
+          fileName: "app/routes/login.tsx",
+          lineNumber: 46,
+          columnNumber: 29
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(FormField, { type: "text", htmlFor: "lastName", label: "Last Name", onChange: (e) => handleInputChange(e, "lastName"), value: formData.lastName }, void 0, !1, {
+          fileName: "app/routes/login.tsx",
+          lineNumber: 47,
+          columnNumber: 29
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/routes/login.tsx",
+        lineNumber: 45,
+        columnNumber: 50
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "w-full text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("button", { type: "submit", name: "_action", value: action, className: `rounded-xl mt-2 bg-yellow-300 px-5 py-2 text-blue-600 
+                        font-semibold transition duration-300 ease-in-out hover:bg-yellow-400 hover:translate-y-1`, children: action === "login" ? "Sign In" : "Sign up" }, void 0, !1, {
+        fileName: "app/routes/login.tsx",
+        lineNumber: 53,
+        columnNumber: 25
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/login.tsx",
+        lineNumber: 52,
+        columnNumber: 21
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/login.tsx",
+      lineNumber: 38,
+      columnNumber: 17
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/login.tsx",
+    lineNumber: 24,
+    columnNumber: 13
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/login.tsx",
+    lineNumber: 23,
+    columnNumber: 9
+  }, this);
+}
+
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-5VOF57XW.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-XGL3X26Q.js", "/build/_shared/chunk-GNZVU7XA.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-T43FSYEC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-M35QKQBG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "0baac13d", hmr: { runtime: "/build/_shared/chunk-GNZVU7XA.js", timestamp: 1691956945722 }, url: "/build/manifest-0BAAC13D.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-OMR32T5G.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-XGL3X26Q.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-GNZVU7XA.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-3HR4YKVV.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-M35QKQBG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-WMVCNJJJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "19c78318", hmr: { runtime: "/build/_shared/chunk-GNZVU7XA.js", timestamp: 1691969442486 }, url: "/build/manifest-19C78318.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -16551,6 +16741,14 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     index: !0,
     caseSensitive: void 0,
     module: index_exports
+  },
+  "routes/login": {
+    id: "routes/login",
+    parentId: "root",
+    path: "login",
+    index: void 0,
+    caseSensitive: void 0,
+    module: login_exports
   }
 };
 
