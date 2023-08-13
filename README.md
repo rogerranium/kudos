@@ -1,17 +1,23 @@
-# Welcome to Remix!
+## Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
 
+
+## Use Remix CLI and create a new Remix Project!
+
+* npx create-remix@latest
+  - enter name of application
+  - choose juste the basics option
+  - choose the cloud provider for deploy app
+  - choose typescript
+  - choose run npm install
+
+
 ## Development
 
-You will be utilizing Wrangler for local development to emulate the Cloudflare runtime. This is already wired up in your package.json as the `dev` script:
-
-```sh
-# start the remix dev server and wrangler
-npm run dev
-```
-
-Open up [http://127.0.0.1:8788](http://127.0.0.1:8788) and you should be ready to go!
+* start the remix dev server and wrangler
+  - npm run dev
+  - Open browser on http://127.0.0.1:8788
 
 ## Deployment
 
