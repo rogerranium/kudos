@@ -4747,7 +4747,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
         }
         return dispatcher.useContext(Context);
       }
-      function useState6(initialState) {
+      function useState7(initialState) {
         var dispatcher = resolveDispatcher();
         return dispatcher.useState(initialState);
       }
@@ -4759,7 +4759,7 @@ See https://reactjs.org/link/invalid-hook-call for tips about how to debug and f
         var dispatcher = resolveDispatcher();
         return dispatcher.useRef(initialValue);
       }
-      function useEffect5(create, deps) {
+      function useEffect6(create, deps) {
         var dispatcher = resolveDispatcher();
         return dispatcher.useEffect(create, deps);
       }
@@ -5288,7 +5288,7 @@ Check the top-level render call using <` + parentName + ">.");
         toArray,
         only: onlyChild
       };
-      exports.Children = Children2, exports.Component = Component2, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext3, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef3, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback3, exports.useContext = useContext5, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect5, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect3, exports.useMemo = useMemo5, exports.useReducer = useReducer, exports.useRef = useRef4, exports.useState = useState6, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition2, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+      exports.Children = Children2, exports.Component = Component2, exports.Fragment = REACT_FRAGMENT_TYPE, exports.Profiler = REACT_PROFILER_TYPE, exports.PureComponent = PureComponent, exports.StrictMode = REACT_STRICT_MODE_TYPE, exports.Suspense = REACT_SUSPENSE_TYPE, exports.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = ReactSharedInternals, exports.cloneElement = cloneElement$1, exports.createContext = createContext3, exports.createElement = createElement$1, exports.createFactory = createFactory, exports.createRef = createRef, exports.forwardRef = forwardRef3, exports.isValidElement = isValidElement2, exports.lazy = lazy, exports.memo = memo, exports.startTransition = startTransition, exports.unstable_act = act, exports.useCallback = useCallback3, exports.useContext = useContext5, exports.useDebugValue = useDebugValue, exports.useDeferredValue = useDeferredValue, exports.useEffect = useEffect6, exports.useId = useId, exports.useImperativeHandle = useImperativeHandle, exports.useInsertionEffect = useInsertionEffect, exports.useLayoutEffect = useLayoutEffect3, exports.useMemo = useMemo5, exports.useReducer = useReducer, exports.useRef = useRef4, exports.useState = useState7, exports.useSyncExternalStore = useSyncExternalStore, exports.useTransition = useTransition2, exports.version = ReactVersion, typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ < "u" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop == "function" && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
     })();
   }
 });
@@ -9719,7 +9719,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
       function basicStateReducer(state, action) {
         return typeof action == "function" ? action(state) : action;
       }
-      function useState6(initialState) {
+      function useState7(initialState) {
         return currentHookNameInDev = "useState", useReducer(
           basicStateReducer,
           // useReducer has a special case to support lazy useState initializers
@@ -9839,7 +9839,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useMemo: useMemo5,
         useReducer,
         useRef: useRef4,
-        useState: useState6,
+        useState: useState7,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect3,
         useCallback: useCallback3,
@@ -13271,7 +13271,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
       function basicStateReducer(state, action) {
         return typeof action == "function" ? action(state) : action;
       }
-      function useState6(initialState) {
+      function useState7(initialState) {
         return currentHookNameInDev = "useState", useReducer(
           basicStateReducer,
           // useReducer has a special case to support lazy useState initializers
@@ -13391,7 +13391,7 @@ Incoming: %s`, currentHookNameInDev, "[" + nextDeps.join(", ") + "]", "[" + prev
         useMemo: useMemo5,
         useReducer,
         useRef: useRef4,
-        useState: useState6,
+        useState: useState7,
         useInsertionEffect: noop,
         useLayoutEffect: useLayoutEffect3,
         useCallback: useCallback3,
@@ -14638,7 +14638,7 @@ var require_react_jsx_dev_runtime_development = __commonJS({
           value: source
         }), Object.freeze && (Object.freeze(element.props), Object.freeze(element)), element;
       };
-      function jsxDEV7(type, config, maybeKey, source, self) {
+      function jsxDEV8(type, config, maybeKey, source, self) {
         {
           var propName, props = {}, key = null, ref = null;
           maybeKey !== void 0 && (checkKeyStringCoercion(maybeKey), key = "" + maybeKey), hasValidKey(config) && (checkKeyStringCoercion(config.key), key = "" + config.key), hasValidRef(config) && (ref = config.ref, warnIfStringRefCannotBeAutoConverted(config, self));
@@ -14785,7 +14785,7 @@ Check the top-level render call using <` + parentName + ">.");
             var typeString;
             type === null ? typeString = "null" : isArray(type) ? typeString = "array" : type !== void 0 && type.$$typeof === REACT_ELEMENT_TYPE ? (typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />", info = " Did you accidentally export a JSX literal instead of a component?") : typeString = typeof type, error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, info);
           }
-          var element = jsxDEV7(type, props, key, source, self);
+          var element = jsxDEV8(type, props, key, source, self);
           if (element == null)
             return element;
           if (validType) {
@@ -16442,7 +16442,7 @@ __export(root_exports, {
 });
 
 // app/styles/app.css
-var app_default = "/build/_assets/app-L4GQRMJZ.css";
+var app_default = "/build/_assets/app-NB6M6EY5.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = __toESM(require_jsx_dev_runtime(), 1), links = () => [
@@ -16509,38 +16509,16 @@ function App() {
   }, this);
 }
 
-// app/routes/_index.tsx
-var index_exports = {};
-__export(index_exports, {
-  default: () => Index,
-  meta: () => meta
-});
-var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1), meta = () => [
-  { title: "New Remix App" },
-  { name: "description", content: "Welcome to Remix!" }
-];
-function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "h-screen w-full bg-slate-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h1", { className: "font-bold text-5xl bg-blue-600", children: "Welcome to roger chat" }, void 0, !1, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 13,
-    columnNumber: 7
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 12,
-    columnNumber: 5
-  }, this);
-}
-
-// app/routes/login.tsx
-var login_exports = {};
-__export(login_exports, {
-  default: () => Login
+// app/routes/register.tsx
+var register_exports = {};
+__export(register_exports, {
+  default: () => Register
 });
 
 // app/components/layout.tsx
-var import_jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
+var import_jsx_dev_runtime3 = __toESM(require_jsx_dev_runtime(), 1);
 function Layout({ children }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "h-screen w-full bg-blue-600 font-mono", children }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "h-screen w-full bg-blue-600 font-mono", children }, void 0, !1, {
     fileName: "app/components/layout.tsx",
     lineNumber: 4,
     columnNumber: 12
@@ -16548,7 +16526,7 @@ function Layout({ children }) {
 }
 
 // app/components/form.field.tsx
-var import_react4 = __toESM(require_react(), 1), import_jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
+var import_react4 = __toESM(require_react(), 1), import_jsx_dev_runtime4 = __toESM(require_jsx_dev_runtime(), 1);
 function FormField({
   htmlFor,
   label,
@@ -16561,13 +16539,13 @@ function FormField({
   let [errorText, setErrorText] = (0, import_react4.useState)(error);
   return (0, import_react4.useEffect)(() => {
     setErrorText(error);
-  }, [error]), /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_jsx_dev_runtime5.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("label", { htmlFor, className: "text-blue-600 font-semibold", children: label }, void 0, !1, {
+  }, [error]), /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(import_jsx_dev_runtime4.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("label", { htmlFor, className: "text-blue-600 font-semibold", children: label }, void 0, !1, {
       fileName: "app/components/form.field.tsx",
       lineNumber: 28,
       columnNumber: 9
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)(
       "input",
       {
         onChange: (e) => {
@@ -16588,7 +16566,7 @@ function FormField({
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "text-xs font-semibold text-center tracking-wide text-red-500 w-full", children: errorText || "" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime4.jsxDEV)("div", { className: "text-xs font-semibold text-center tracking-wide text-red-500 w-full", children: errorText || "" }, void 0, !1, {
       fileName: "app/components/form.field.tsx",
       lineNumber: 39,
       columnNumber: 9
@@ -16600,10 +16578,248 @@ function FormField({
   }, this);
 }
 
+// app/routes/register.tsx
+var import_react5 = __toESM(require_react(), 1), import_jsx_dev_runtime5 = __toESM(require_jsx_dev_runtime(), 1);
+function Register() {
+  let EMAIL_REGEX = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,3})$/i, PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/, USER_REGEX = /^[A-z][A-z0-9]{1,30}$/, [validEmail, setValidEmail] = (0, import_react5.useState)(!1), [validPassword, setValidPassword] = (0, import_react5.useState)(!1), [validFirstName, setValidFirstName] = (0, import_react5.useState)(!1), [validLastName, setValidLastName] = (0, import_react5.useState)(!1), [formData, setFormData] = (0, import_react5.useState)({
+    email: "",
+    password: "",
+    firstName: "",
+    lastName: ""
+  });
+  (0, import_react5.useEffect)(() => {
+    setValidEmail(EMAIL_REGEX.test(formData.email));
+  }, [formData.email]), (0, import_react5.useEffect)(() => {
+    setValidPassword(PWD_REGEX.test(formData.password));
+  }, [formData.password]), (0, import_react5.useEffect)(() => {
+    setValidFirstName(USER_REGEX.test(formData.firstName));
+  }, [formData.firstName]), (0, import_react5.useEffect)(() => {
+    setValidLastName(USER_REGEX.test(formData.lastName));
+  }, [formData.lastName]);
+  let handleInputChange = (event, field) => {
+    setFormData((form) => ({
+      ...form,
+      [field]: event.target.value
+    }));
+  };
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Layout, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "h-full flex justify-center items-center flex-col gap-y-4", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { className: "text-5xl font-extrabold text-yellow-300 text-center", children: "BIENVENUE DANS LE BLOG DE MOMO" }, void 0, !1, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 50,
+      columnNumber: 17
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "font-semibold text-slate-300 text-center", children: "INSCRIPTION" }, void 0, !1, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 52,
+      columnNumber: 17
+    }, this),
+    JSON.stringify(formData),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("br", {}, void 0, !1, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 54,
+      columnNumber: 43
+    }, this),
+    "email valid : ",
+    JSON.stringify(validEmail),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("br", {}, void 0, !1, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 55,
+      columnNumber: 59
+    }, this),
+    "mot de passe valid : ",
+    JSON.stringify(validPassword),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("br", {}, void 0, !1, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 56,
+      columnNumber: 69
+    }, this),
+    "nom valid : ",
+    JSON.stringify(validFirstName),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("br", {}, void 0, !1, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 57,
+      columnNumber: 61
+    }, this),
+    "pr\xE9nom valid : ",
+    JSON.stringify(validLastName),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("br", {}, void 0, !1, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 58,
+      columnNumber: 63
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("form", { method: "POST", className: "rounded-2xl bg-gray-200 p-6 w-96", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+        FormField,
+        {
+          type: "text",
+          htmlFor: "email",
+          label: "Email",
+          value: formData.email,
+          onChange: (e) => handleInputChange(e, "email")
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/register.tsx",
+          lineNumber: 62,
+          columnNumber: 21
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "text-red-600 text-sm mb-4 pl-2", children: validEmail ? "" : /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: "Email incorrect" }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 65,
+        columnNumber: 27
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 64,
+        columnNumber: 21
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+        FormField,
+        {
+          type: "password",
+          htmlFor: "password",
+          label: "Mot de passe",
+          value: formData.password,
+          onChange: (e) => handleInputChange(e, "password")
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/register.tsx",
+          lineNumber: 68,
+          columnNumber: 21
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "text-red-600 text-sm mb-4 pl-2", children: validPassword ? "" : /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: [
+        "Mot de passe doit contenir 8 caract\xE9res",
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("br", {}, void 0, !1, {
+          fileName: "app/routes/register.tsx",
+          lineNumber: 71,
+          columnNumber: 72
+        }, this),
+        "avec une majuscule , un caract\xE8re sp\xE9cial !@#$% et un nombre"
+      ] }, void 0, !0, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 71,
+        columnNumber: 27
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 70,
+        columnNumber: 21
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+        FormField,
+        {
+          type: "text",
+          htmlFor: "firstName",
+          label: "Nom",
+          value: formData.firstName,
+          onChange: (e) => handleInputChange(e, "firstName")
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/register.tsx",
+          lineNumber: 75,
+          columnNumber: 21
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "text-red-600 text-sm mb-4 pl-2", children: validFirstName ? "" : /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: "Le nom doit contenir 2 \xE0 30 caract\xE8res" }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 78,
+        columnNumber: 27
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 77,
+        columnNumber: 21
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+        FormField,
+        {
+          type: "text",
+          htmlFor: "lastName",
+          label: "Pr\xE9nom",
+          value: formData.lastName,
+          onChange: (e) => handleInputChange(e, "lastName")
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/register.tsx",
+          lineNumber: 82,
+          columnNumber: 21
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "text-red-600 text-sm mb-4 pl-2", children: validLastName ? "" : /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: "Le pr\xE9nom doit contenir 2 \xE0 30 caract\xE8res" }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 85,
+        columnNumber: 27
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 84,
+        columnNumber: 21
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "w-full text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { type: "submit", name: "_action", value: "register", className: `rounded-xl mt-2 bg-yellow-300 px-5 py-2 text-blue-600 
+                        font-semibold transition duration-300 ease-in-out hover:bg-yellow-400 hover:translate-y-1`, children: "S'inscrire" }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 90,
+        columnNumber: 25
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/register.tsx",
+        lineNumber: 89,
+        columnNumber: 21
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/register.tsx",
+      lineNumber: 61,
+      columnNumber: 17
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/register.tsx",
+    lineNumber: 48,
+    columnNumber: 13
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/register.tsx",
+    lineNumber: 47,
+    columnNumber: 9
+  }, this);
+}
+
+// app/routes/_index.tsx
+var index_exports = {};
+__export(index_exports, {
+  default: () => Index,
+  meta: () => meta
+});
+var import_jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1), meta = () => [
+  { title: "New Remix App" },
+  { name: "description", content: "Welcome to Remix!" }
+];
+function Index() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "h-screen w-full bg-slate-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h1", { className: "font-bold text-5xl bg-blue-600", children: "Welcome to roger chat" }, void 0, !1, {
+    fileName: "app/routes/_index.tsx",
+    lineNumber: 13,
+    columnNumber: 7
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/_index.tsx",
+    lineNumber: 12,
+    columnNumber: 5
+  }, this);
+}
+
 // app/routes/login.tsx
-var import_react5 = __toESM(require_react(), 1), import_jsx_dev_runtime6 = __toESM(require_jsx_dev_runtime(), 1);
+var login_exports = {};
+__export(login_exports, {
+  default: () => Login
+});
+var import_react6 = __toESM(require_react(), 1), import_jsx_dev_runtime7 = __toESM(require_jsx_dev_runtime(), 1);
 function Login() {
-  let [action, setAction] = (0, import_react5.useState)("login"), [formData, setFormData] = (0, import_react5.useState)({
+  let [action, setAction] = (0, import_react6.useState)("login"), [formData, setFormData] = (0, import_react6.useState)({
     email: "",
     password: "",
     firstName: "",
@@ -16614,8 +16830,8 @@ function Login() {
       [field]: event.target.value
     }));
   };
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Layout, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "h-full flex justify-center items-center flex-col gap-y-4", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Layout, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "h-full flex justify-center items-center flex-col gap-y-4", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
       "button",
       {
         onClick: () => setAction(action == "login" ? "register" : "login"),
@@ -16631,19 +16847,19 @@ function Login() {
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h2", { className: "text-5xl font-extrabold text-yellow-300 text-center", children: "WELCOME TO MY CHAT" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h2", { className: "text-5xl font-extrabold text-yellow-300 text-center", children: "WELCOME TO MY CHAT" }, void 0, !1, {
       fileName: "app/routes/login.tsx",
       lineNumber: 31,
       columnNumber: 17
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "font-semibold text-slate-300 text-center", children: action === "login" ? "Log In Please To Continue ..." : "Sign up To Get Started" }, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { className: "font-semibold text-slate-300 text-center", children: action === "login" ? "Log In Please To Continue ..." : "Sign up To Get Started" }, void 0, !1, {
       fileName: "app/routes/login.tsx",
       lineNumber: 32,
       columnNumber: 17
     }, this),
     JSON.stringify(formData),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("form", { className: "rounded-2xl bg-gray-200 p-6 w-96", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("form", { className: "rounded-2xl bg-gray-200 p-6 w-96", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
         FormField,
         {
           type: "text",
@@ -16661,7 +16877,7 @@ function Login() {
         },
         this
       ),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
         FormField,
         {
           type: "password",
@@ -16679,13 +16895,13 @@ function Login() {
         },
         this
       ),
-      action === "register" && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_jsx_dev_runtime6.Fragment, { children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(FormField, { type: "text", htmlFor: "firstName", label: "First Name", onChange: (e) => handleInputChange(e, "firstName"), value: formData.firstName }, void 0, !1, {
+      action === "register" && /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_jsx_dev_runtime7.Fragment, { children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(FormField, { type: "text", htmlFor: "firstName", label: "First Name", onChange: (e) => handleInputChange(e, "firstName"), value: formData.firstName }, void 0, !1, {
           fileName: "app/routes/login.tsx",
           lineNumber: 46,
           columnNumber: 29
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(FormField, { type: "text", htmlFor: "lastName", label: "Last Name", onChange: (e) => handleInputChange(e, "lastName"), value: formData.lastName }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(FormField, { type: "text", htmlFor: "lastName", label: "Last Name", onChange: (e) => handleInputChange(e, "lastName"), value: formData.lastName }, void 0, !1, {
           fileName: "app/routes/login.tsx",
           lineNumber: 47,
           columnNumber: 29
@@ -16695,7 +16911,7 @@ function Login() {
         lineNumber: 45,
         columnNumber: 50
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "w-full text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("button", { type: "submit", name: "_action", value: action, className: `rounded-xl mt-2 bg-yellow-300 px-5 py-2 text-blue-600 
+      /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "w-full text-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("button", { type: "submit", name: "_action", value: action, className: `rounded-xl mt-2 bg-yellow-300 px-5 py-2 text-blue-600 
                         font-semibold transition duration-300 ease-in-out hover:bg-yellow-400 hover:translate-y-1`, children: action === "login" ? "Sign In" : "Sign up" }, void 0, !1, {
         fileName: "app/routes/login.tsx",
         lineNumber: 53,
@@ -16722,7 +16938,7 @@ function Login() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-EKD5DC2D.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-RGGV2WIG.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-7LS2WKLY.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-WNS5RGTL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-NKCBEM3K.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-YY6YIA3N.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "a7073462", hmr: { runtime: "/build/_shared/chunk-7LS2WKLY.js", timestamp: 1692028598006 }, url: "/build/manifest-A7073462.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-ND4JH2G4.js", imports: ["/build/_shared/chunk-ZWGWGGVF.js", "/build/_shared/chunk-GIAAE3CH.js", "/build/_shared/chunk-HF3UBE4D.js", "/build/_shared/chunk-XU7DNSPJ.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-7LS2WKLY.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-254Q7JLI.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-CQWWBPFQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-A3ECWYD2.js", imports: ["/build/_shared/chunk-LNMOBYGQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/register": { id: "routes/register", parentId: "root", path: "register", index: void 0, caseSensitive: void 0, module: "/build/routes/register-3WYOWCZR.js", imports: ["/build/_shared/chunk-LNMOBYGQ.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "cfc8cc18", hmr: { runtime: "/build/_shared/chunk-7LS2WKLY.js", timestamp: 1692040661325 }, url: "/build/manifest-CFC8CC18.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -16733,6 +16949,14 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     index: void 0,
     caseSensitive: void 0,
     module: root_exports
+  },
+  "routes/register": {
+    id: "routes/register",
+    parentId: "root",
+    path: "register",
+    index: void 0,
+    caseSensitive: void 0,
+    module: register_exports
   },
   "routes/_index": {
     id: "routes/_index",
