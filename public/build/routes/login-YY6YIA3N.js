@@ -3,7 +3,7 @@ import {
 } from "/build/_shared/chunk-XU7DNSPJ.js";
 import {
   createHotContext
-} from "/build/_shared/chunk-GNZVU7XA.js";
+} from "/build/_shared/chunk-7LS2WKLY.js";
 import "/build/_shared/chunk-UWV35TSL.js";
 import {
   require_react
@@ -31,7 +31,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/layout.tsx"
   );
-  import.meta.hot.lastModified = "1691963320651.8223";
+  import.meta.hot.lastModified = "1692028477565.8901";
 }
 function Layout({
   children
@@ -69,7 +69,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/components/form.field.tsx"
   );
-  import.meta.hot.lastModified = "1691966826000.801";
+  import.meta.hot.lastModified = "1692028477565.8901";
 }
 function FormField({
   htmlFor,
@@ -138,7 +138,7 @@ if (import.meta) {
     //@ts-expect-error
     "app/routes/login.tsx"
   );
-  import.meta.hot.lastModified = "1691969442168.1592";
+  import.meta.hot.lastModified = "1692028477565.8901";
 }
 function Login() {
   _s2();
@@ -232,4 +232,4 @@ window.$RefreshSig$ = prevRefreshSig;
 export {
   Login as default
 };
-//# sourceMappingURL=/build/routes/login-WMVCNJJJ.js.map
+//# sourceMappingURL=/build/routes/login-YY6YIA3N.js.map
